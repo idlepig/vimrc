@@ -39,12 +39,13 @@ nmap <leader>nl :nohlsearch<CR>
 
 nmap <leader>r <action>(RunClass)
 nmap <leader>rv <action>(IdeaVim.ReloadVimRc.reload)
+nmap <leader>rp <action>(ManageRecentProjects)
+nmap <leader>rf <action>(RecentFiles)
 
 nmap <leader>wa <action>(UnsplitAll) \| <action>(HideAllWindows)
 nmap <leader>wc <c-w>c
 nmap <leader>wh <action>(HideActiveWindow)
 nmap <leader>wp <action>(OpenProjectWindows)
-nmap <leader>wr <action>(ManageRecentProjects)
 nmap <leader>ws <action>(Macro.SplitVertically)
 nmap <leader>wz <action>(ToggleZenMode)
 
@@ -59,3 +60,4 @@ vmap <leader>em <action>(ExtractMethod)
 vmap <leader>ev <action>(IntroduceVariable)
 
 vmap p "_dp
+
