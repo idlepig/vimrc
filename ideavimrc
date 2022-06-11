@@ -6,8 +6,8 @@ set clipboard+=unnamed
 set ignorecase
 set scrolloff=30
 set history=200
-set incsearch
-set hlsearch
+set which-key
+set notimeout
 let mapleader=" "
 
 Plug 'tpope/vim-surround'
@@ -15,19 +15,25 @@ Plug 'preservim/nerdtree'
 
 set keep-english-in-normal
 
-nmap <leader>bm <action>(ShowBookmarks)
 
 nmap <leader>c :wq!<CR>
 
-nmap <leader>d <action>(DebugClass)
+let g:WhichKeyDesc_Debug = "<leader>d Debug"
+nmap <leader>dm <action>(ToggleLineBreakpoint)
+nmap <leader>ds <action>(StepIntoMyCode)
 
+let g:WhichKeyDesc_Explorer = "<leader>e Explorer"
 nmap <leader>e <action>(ActivateProjectToolWindow)
+vmap <leader>em <action>(ExtractMethod)
+vmap <leader>ev <action>(IntroduceVariable)
 
+let g:WhichKeyDesc_FileOrFormat = "<leader>f FileOrFormat"
 nmap <leader>fl <action>(SelectInProjectView)
 nmap <leader>fm <action>(ReformatCode)
 nmap <leader>fs <action>(FileStructurePopup)
 nmap <leader>fp <action>(FindInPath)
 
+let g:WhichKeyDesc_Goto = "<leader>g Goto"
 nmap <leader>ga <action>(GotoAction)
 nmap <leader>gf <action>(GotoFile)
 nmap ge <action>(GotoNextError)
@@ -35,29 +41,40 @@ nmap gt <action>(GotoTest)
 
 nmap <leader>i f)a
 
+let g:WhichKeyDesc_NoHighlight = "<leader>n NoHighlight"
 nmap <leader>nl :nohlsearch<CR>
 
-nmap <leader>r <action>(RunClass)
+" run, debug, stop run, reload, recent
+let g:WhichKeyDesc_Run = "<leader>r Run"
+nmap <leader>rr <action>(RunClass)
+nmap <leader>rd <action>(DebugClass)
+nmap <leader>rs <action>(Stop)
 nmap <leader>rv <action>(IdeaVim.ReloadVimRc.reload)
 nmap <leader>rp <action>(ManageRecentProjects)
 nmap <leader>rf <action>(RecentFiles)
 
+let g:WhichKeyDesc_Terminal = "<leader>t Terminal"
+nmap <leader>t <action>(ActivateTerminalToolWindow)
+
+let g:WhichKeyDesc_Window = "<leader>w Window"
 nmap <leader>wa <action>(UnsplitAll) \| <action>(HideAllWindows)
 nmap <leader>wc <c-w>c
 nmap <leader>wh <action>(HideActiveWindow)
 nmap <leader>wp <action>(OpenProjectWindows)
 nmap <leader>ws <action>(Macro.SplitVertically)
 nmap <leader>wz <action>(ToggleZenMode)
+nmap <leader>wb <action>(ActivateBookmarksToolWindow)
+nmap <leader>wt <action>(ActivateTODOToolWindow)
 
+let g:WhichKeyDesc_SoftWrap = "<leader>s Soft wrap"
 nmap <leader>sw <action>(EditorToggleUseSoftWraps)
 
+let g:WhichKeyDesc_Fold = "<leader>z Fold"
 nmap <leader>zc <action>(CollapseAllRegions)
 nmap <leader>zo <action>(ExpandAllRegions)
 
 nmap [[ <action>(MethodUp)
 
-vmap <leader>em <action>(ExtractMethod)
-vmap <leader>ev <action>(IntroduceVariable)
 
 vmap p "_dp
 
