@@ -1,0 +1,61 @@
+set ideajoin
+nmap <Enter> o<ESC>
+set nu
+set relativenumber
+set clipboard+=unnamed
+set ignorecase
+set scrolloff=30
+set history=200
+set incsearch
+set hlsearch
+let mapleader=" "
+
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+
+set keep-english-in-normal
+
+nmap <leader>bm <action>(ShowBookmarks)
+
+nmap <leader>c :wq!<CR>
+
+nmap <leader>d <action>(DebugClass)
+
+nmap <leader>e <action>(ActivateProjectToolWindow)
+
+nmap <leader>fl <action>(SelectInProjectView)
+nmap <leader>fm <action>(ReformatCode)
+nmap <leader>fs <action>(FileStructurePopup)
+nmap <leader>fp <action>(FindInPath)
+
+nmap <leader>ga <action>(GotoAction)
+nmap <leader>gf <action>(GotoFile)
+nmap ge <action>(GotoNextError)
+nmap gt <action>(GotoTest)
+
+nmap <leader>i f)a
+
+nmap <leader>nl :nohlsearch<CR>
+
+nmap <leader>r <action>(RunClass)
+nmap <leader>rv <action>(IdeaVim.ReloadVimRc.reload)
+
+nmap <leader>wa <action>(UnsplitAll) \| <action>(HideAllWindows)
+nmap <leader>wc <c-w>c
+nmap <leader>wh <action>(HideActiveWindow)
+nmap <leader>wp <action>(OpenProjectWindows)
+nmap <leader>wr <action>(ManageRecentProjects)
+nmap <leader>ws <action>(Macro.SplitVertically)
+nmap <leader>wz <action>(ToggleZenMode)
+
+nmap <leader>sw <action>(EditorToggleUseSoftWraps)
+
+nmap <leader>zc <action>(CollapseAllRegions)
+nmap <leader>zo <action>(ExpandAllRegions)
+
+nmap [[ <action>(MethodUp)
+
+vmap <leader>em <action>(ExtractMethod)
+vmap <leader>ev <action>(IntroduceVariable)
+
+vmap p "_dp
