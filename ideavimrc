@@ -4,13 +4,14 @@ set nu
 set relativenumber
 set clipboard+=unnamed
 set ignorecase
-set scrolloff=30
+set scrolloff=13
 set history=200
 set which-key
 set notimeout
 let mapleader=" "
 
-Plug 'tpope/vim-surround'
+
+
 Plug 'preservim/nerdtree'
 
 set keep-english-in-normal
@@ -20,6 +21,7 @@ nmap <leader>c :wq!<CR>
 
 let g:WhichKeyDesc_Debug = "<leader>d Debug"
 nmap <leader>dm <action>(ToggleLineBreakpoint)
+nmap <leader>de <action>(EditBreakpoint)
 nmap <leader>ds <action>(StepIntoMyCode)
 
 let g:WhichKeyDesc_Explorer = "<leader>e Explorer"
@@ -33,16 +35,21 @@ nmap <leader>fm <action>(ReformatCode)
 nmap <leader>fs <action>(FileStructurePopup)
 nmap <leader>fp <action>(FindInPath)
 
-let g:WhichKeyDesc_Goto = "<leader>g Goto"
-nmap <leader>ga <action>(GotoAction)
-nmap <leader>gf <action>(GotoFile)
+let g:WhichKeyDesc_Goto = "<leader>g GotoOrGit"
+nmap <leader>gb <action>(Back)
+nmap <leader>gf <action>(Forward)
 nmap ge <action>(GotoNextError)
 nmap gt <action>(GotoTest)
+
 
 nmap <leader>i f)a
 
 let g:WhichKeyDesc_NoHighlight = "<leader>n NoHighlight"
 nmap <leader>nl :nohlsearch<CR>
+
+let g:WhichKeyDesc_Popup = "<leader>p Popup"
+nmap <leader>pa <action>(GotoAction)
+nmap <leader>pf <action>(GotoFile)
 
 " run, debug, stop run, reload, recent
 let g:WhichKeyDesc_Run = "<leader>r Run"
@@ -58,13 +65,15 @@ nmap <leader>t <action>(ActivateTerminalToolWindow)
 
 let g:WhichKeyDesc_Window = "<leader>w Window"
 nmap <leader>wa <action>(UnsplitAll) \| <action>(HideAllWindows)
-nmap <leader>wc <c-w>c
+nmap <leader>wb <action>(ActivateBookmarksToolWindow)
+nmap <leader>wc <action>(CloseEditor)
 nmap <leader>wh <action>(HideActiveWindow)
 nmap <leader>wp <action>(OpenProjectWindows)
 nmap <leader>ws <action>(Macro.SplitVertically)
-nmap <leader>wz <action>(ToggleZenMode)
-nmap <leader>wb <action>(ActivateBookmarksToolWindow)
 nmap <leader>wt <action>(ActivateTODOToolWindow)
+nmap <leader>wz <action>(ToggleZenMode)
+nmap <leader>wo <action>(CloseAllEditorsButActive)
+
 
 let g:WhichKeyDesc_SoftWrap = "<leader>s Soft wrap"
 nmap <leader>sw <action>(EditorToggleUseSoftWraps)
@@ -74,6 +83,7 @@ nmap <leader>zc <action>(CollapseAllRegions)
 nmap <leader>zo <action>(ExpandAllRegions)
 
 nmap [[ <action>(MethodUp)
+nmap ]] <action>(MethodDown)
 
 
 vmap p "_dp
