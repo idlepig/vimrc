@@ -16,8 +16,9 @@ Plug 'preservim/nerdtree'
 
 set keep-english-in-normal
 
-
-nmap <leader>c :wq!<CR>
+let g:WhichKeyDesc_Debug = "<leader>c Chatops"
+nmap <leader>cc <action>(Tool_External Tools_chat)
+nmap <leader>cb <action>(Tool_External Tools_black)
 
 let g:WhichKeyDesc_Debug = "<leader>d Debug"
 nmap <leader>dm <action>(ToggleLineBreakpoint)
