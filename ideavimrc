@@ -23,16 +23,14 @@ nmap <leader>cb <action>(Tool_External Tools_black)
 let g:WhichKeyDesc_Debug = "<leader>d Debug"
 nmap <leader>dm <action>(ToggleLineBreakpoint)
 nmap <leader>de <action>(EditBreakpoint)
-nmap <leader>ds <action>(StepIntoMyCode)
 
 let g:WhichKeyDesc_Explorer = "<leader>e Explorer"
 nmap <leader>e <action>(ActivateProjectToolWindow)
-vmap <leader>em <action>(ExtractMethod)
-vmap <leader>ev <action>(IntroduceVariable)
 
 let g:WhichKeyDesc_FileOrFormat = "<leader>f FileOrFormat"
+" fl: file location
 nmap <leader>fl <action>(SelectInProjectView)
-nmap <leader>fm <action>(ReformatCode)
+nmap <leader>fc <action>(ReformatCode)
 nmap <leader>fs <action>(FileStructurePopup)
 nmap <leader>fp <action>(FindInPath)
 
@@ -70,6 +68,7 @@ nmap <leader>wb <action>(ActivateBookmarksToolWindow)
 nmap <leader>wc <action>(CloseEditor)
 nmap <leader>wh <action>(HideActiveWindow)
 nmap <leader>wp <action>(OpenProjectWindows)
+nmap <leader>wr <action>(Refactorings.QuickListPopupAction)
 nmap <leader>ws <action>(Macro.SplitVertically)
 nmap <leader>wt <action>(ActivateTODOToolWindow)
 nmap <leader>wz <action>(ToggleZenMode)
