@@ -1,7 +1,11 @@
 set nocompatible
 set encoding=utf8
+set foldmethod=manual
+set foldmethod=indent
 
 let mapleader=" "
+
+syntax on
 
 set nobackup
 set noswapfile
@@ -12,6 +16,9 @@ set nu
 set clipboard+=unnamed
 set scrolloff=30
 
+filetype plugin indent on
+set expandtab
+set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
