@@ -4,7 +4,7 @@ set nu
 set relativenumber
 set clipboard+=unnamed
 set ignorecase
-set scrolloff=13
+set scrolloff=17
 set history=200
 set which-key
 set notimeout
@@ -52,6 +52,8 @@ let g:WhichKeyDesc_Popup = "<leader>p Popup"
 nmap <leader>pa <action>(GotoAction)
 nmap <leader>pf <action>(GotoFile)
 nmap <leader>pd <action>(QuickJavaDoc)
+nmap <leader>pp <action>(ParameterInfo)
+
 
 
 " run, debug, stop run, reload, recent
@@ -93,4 +95,3 @@ nmap ]] <action>(MethodDown)
 
 
 vmap p "_dp
-
