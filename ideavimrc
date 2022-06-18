@@ -8,9 +8,11 @@ set scrolloff=13
 set history=200
 set which-key
 set notimeout
+set incsearch
+set hlsearch
 let mapleader=" "
 
-
+set easymotion
 
 Plug 'preservim/nerdtree'
 
@@ -49,6 +51,8 @@ nmap <leader>nl :nohlsearch<CR>
 let g:WhichKeyDesc_Popup = "<leader>p Popup"
 nmap <leader>pa <action>(GotoAction)
 nmap <leader>pf <action>(GotoFile)
+nmap <leader>pd <action>(QuickJavaDoc)
+
 
 " run, debug, stop run, reload, recent
 let g:WhichKeyDesc_Run = "<leader>r Run"
@@ -58,6 +62,8 @@ nmap <leader>rs <action>(Stop)
 nmap <leader>rv <action>(IdeaVim.ReloadVimRc.reload)
 nmap <leader>rp <action>(ManageRecentProjects)
 nmap <leader>rf <action>(RecentFiles)
+
+
 
 let g:WhichKeyDesc_Terminal = "<leader>t Terminal"
 nmap <leader>t <action>(ActivateTerminalToolWindow)
