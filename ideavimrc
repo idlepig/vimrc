@@ -4,7 +4,7 @@ set nu
 set relativenumber
 set clipboard+=unnamed
 set ignorecase
-set scrolloff=17
+set scrolloff=13
 set history=200
 set which-key
 set notimeout
@@ -17,6 +17,9 @@ set easymotion
 Plug 'preservim/nerdtree'
 
 set keep-english-in-normal
+
+vmap <tab> >gv
+vmap <s-tab> <gv
 
 let g:WhichKeyDesc_Debug = "<leader>c Chatops"
 nmap <leader>cc <action>(Tool_External Tools_chat)
@@ -53,7 +56,6 @@ nmap <leader>pa <action>(GotoAction)
 nmap <leader>pf <action>(GotoFile)
 nmap <leader>pd <action>(QuickJavaDoc)
 nmap <leader>pp <action>(ParameterInfo)
-
 
 
 " run, debug, stop run, reload, recent
@@ -95,3 +97,4 @@ nmap ]] <action>(MethodDown)
 
 
 vmap p "_dp
+
