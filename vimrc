@@ -18,7 +18,6 @@ set scrolloff=30
 
 filetype plugin indent on
 set expandtab
-set autoindent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
