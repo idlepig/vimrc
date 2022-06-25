@@ -23,6 +23,9 @@ vmap <tab> >gv
 vmap <s-tab> <gv
 vmap p "_dp
 
+
+nmap <leader>/ <action>(CommentByLineComment)
+
 let g:WhichKeyDesc_Debug = "<leader>c Chatops"
 nmap <leader>cc <action>(Tool_External Tools_chat)
 nmap <leader>cb <action>(Tool_External Tools_black)
@@ -66,7 +69,7 @@ nmap <leader>rv <action>(IdeaVim.ReloadVimRc.reload)
 nmap <leader>rp <action>(ManageRecentProjects)
 nmap <leader>rf <action>(RecentFiles)
 nmap <leader>ru <action>(PublishGroup.Upload)
-
+nmap <leader>rn <action>(RenameElement)
 
 let g:WhichKeyDesc_Terminal = "<leader>t Terminal"
 nmap <leader>t <action>(ActivateTerminalToolWindow)
@@ -79,7 +82,7 @@ nmap <leader>wh <action>(HideActiveWindow)
 nmap <leader>wp <action>(OpenProjectWindows)
 nmap <leader>wr <action>(Refactorings.QuickListPopupAction)
 nmap <leader>ws <action>(Macro.SplitVertically)
-nmap <leader>wz <action>(ToggleZenMode)
+nmap <leader>wz <action>(ToggleZenMode):set nu<CR>
 nmap <leader>wo <action>(CloseAllEditorsButActive)
 
 
@@ -95,4 +98,7 @@ nmap ]] <action>(MethodDown)
 
 
 vmap <leader>wr <action>(Refactorings.QuickListPopupAction)
-
+vmap <leader>rn <action>(RenameElement)
+vmap <leader>ev <action>(IntroduceVariable)
+vmap <leader>em <action>(ExtractMethod)
+vmap <leader>/ <action>(CommentByLineComment)
