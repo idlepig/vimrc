@@ -1,25 +1,27 @@
 set ideajoin
-nmap <Enter> o<ESC>
-set nu
+set keep-english-in-normal
+
+
 set relativenumber
-set clipboard+=unnamed
 set ignorecase
+
+set clipboard+=unnamed
 set scrolloff=13
 set history=200
-set which-key
 set notimeout
 set incsearch
 set hlsearch
+set which-key
 let mapleader=" "
 
 set easymotion
 
 Plug 'preservim/nerdtree'
 
-set keep-english-in-normal
-
+nmap <Enter> o<ESC>
 vmap <tab> >gv
 vmap <s-tab> <gv
+vmap p "_dp
 
 let g:WhichKeyDesc_Debug = "<leader>c Chatops"
 nmap <leader>cc <action>(Tool_External Tools_chat)
@@ -40,13 +42,10 @@ nmap <leader>fs <action>(FileStructurePopup)
 nmap <leader>fp <action>(FindInPath)
 
 let g:WhichKeyDesc_Goto = "<leader>g GotoOrGit"
-nmap <leader>gb <action>(Back)
-nmap <leader>gf <action>(Forward)
+nmap gb <action>(Back)
+nmap gf <action>(Forward)
 nmap ge <action>(GotoNextError)
-nmap gt <action>(GotoTest)
 
-
-nmap <leader>i f)a
 
 let g:WhichKeyDesc_NoHighlight = "<leader>n NoHighlight"
 nmap <leader>nl :nohlsearch<CR>
@@ -66,7 +65,7 @@ nmap <leader>rs <action>(Stop)
 nmap <leader>rv <action>(IdeaVim.ReloadVimRc.reload)
 nmap <leader>rp <action>(ManageRecentProjects)
 nmap <leader>rf <action>(RecentFiles)
-
+nmap <leader>ru <action>(PublishGroup.Upload)
 
 
 let g:WhichKeyDesc_Terminal = "<leader>t Terminal"
@@ -80,7 +79,6 @@ nmap <leader>wh <action>(HideActiveWindow)
 nmap <leader>wp <action>(OpenProjectWindows)
 nmap <leader>wr <action>(Refactorings.QuickListPopupAction)
 nmap <leader>ws <action>(Macro.SplitVertically)
-nmap <leader>wt <action>(ActivateTODOToolWindow)
 nmap <leader>wz <action>(ToggleZenMode)
 nmap <leader>wo <action>(CloseAllEditorsButActive)
 
@@ -96,5 +94,5 @@ nmap [[ <action>(MethodUp)
 nmap ]] <action>(MethodDown)
 
 
-vmap p "_dp
+vmap <leader>wr <action>(Refactorings.QuickListPopupAction)
 
