@@ -11,7 +11,11 @@
 "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
 "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select",
 "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select {im} && /usr/local/Cellar/im-select/1.0.1/bin/im-select com.apple.keylayout.US",
-"vim.visualModeKeyBindingsNonRecursive": [
+vim.visualModeKeyBindingsNonRecursive": [
+{
+      "before": ["$"],
+      "after": ["g", "_"]
+   },
 {
   "before": [ "<leader>", "/"],
   "commands": ["editor.action.commentLine", "cursorDown"]
