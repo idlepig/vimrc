@@ -3,13 +3,14 @@
 "vim.useSystemClipboard": true,
 "vim.useCtrlKeys": true,
 "vim.hlsearch": true,
-"vim.relativenumber": true,
+"editor.cursorSurroundingLines": 11,
+"editor.lineNumbers": "relative",
 "vim.leader": "<space>",
 "vim.insertModeKeyBindings": [],
 "vim.autoSwitchInputMethod.enable": true,
 "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
 "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select",
-"vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select {im}",
+"vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select {im} && /usr/local/Cellar/im-select/1.0.1/bin/im-select com.apple.keylayout.US",
 "vim.visualModeKeyBindingsNonRecursive": [
 {
   "before": [ "<leader>", "/"],
