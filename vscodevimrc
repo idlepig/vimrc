@@ -1,196 +1,189 @@
-"vim.easymotion": true,
-"vim.incsearch": true,
-"vim.useSystemClipboard": true,
-"vim.useCtrlKeys": true,
-"vim.hlsearch": true,
-"editor.cursorSurroundingLines": 11,
-"editor.lineNumbers": "relative",
-"vim.leader": "<space>",
-"vim.insertModeKeyBindings": [],
-"vim.autoSwitchInputMethod.enable": true,
-"vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
-"vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select",
-"vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select {im} && /usr/local/Cellar/im-select/1.0.1/bin/im-select com.apple.keylayout.US",
-vim.visualModeKeyBindingsNonRecursive": [
-{
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "editor.cursorSurroundingLines": 11,
+  "editor.lineNumbers": "relative",
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [],
+  "vim.autoSwitchInputMethod.enable": true,
+  "vim.autoSwitchInputMethod.defaultIM": "com.apple.keylayout.US",
+  "vim.autoSwitchInputMethod.obtainIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select",
+  "vim.autoSwitchInputMethod.switchIMCmd": "/usr/local/Cellar/im-select/1.0.1/bin/im-select {im} && /usr/local/Cellar/im-select/1.0.1/bin/im-select com.apple.keylayout.US",
+  "macros": { "commentLine": ["editor.action.commentLine","cursorDown"] },
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
       "before": ["$"],
       "after": ["g", "_"]
    },
-{
-  "before": [ "<leader>", "/"],
-  "commands": ["editor.action.commentLine", "cursorDown"]
-},
-{
-  "before": ["<tab>"],
-  "after": [">", "g", "v"]
-},
-{
-  "before": ["<s-tab>"],
-  "after": ["<", "g", "v"]
-},
-{
-  "before": [ "<leader>", "p", "a" ],
-  "commands": [ "workbench.action.showCommands" ]
-},
-{
-  "before": [ "<leader>", "r", "n" ],
-  "commands": ["editor.action.rename"]
-},
-{
-  "before": [ "<leader>", "w", "r" ],
-  "commands": ["editor.action.refactor"]
-},
-{
-  "before": [ "<leader>", "e", "v" ],
-  "commands": ["editor.action.refactor"]
-},
-{
-  "before": [ "<leader>", "e", "m" ],
-  "commands": ["editor.action.refactor"]
-},
-],
-"vim.normalModeKeyBindingsNonRecursive": [
-{
-  "before": [ "<leader>", "/"],
-  "commands": ["editor.action.commentLine", "cursorDown"]
-},
-{
-  "before": ["k"],
-  "after": ["g", "k"]
-},
-{
-  "before": ["j"],
-  "after": ["g", "j"]
-},
-{
-  "before": [ "<leader>", "e"],
-  "commands": ["workbench.view.explorer"]
-},
-{
-  "before": [ "<leader>", "f", "l"],
-  "commands": ["workbench.files.action.showActiveFileInExplorer"]
-},
-{
-  "before": [ "<leader>", "f", "c" ],
-  "commands": [ "editor.action.formatDocument" ]
-},
-{
-  "before": [ "<leader>", "f", "s" ],
-  "commands": [ "workbench.action.gotoSymbol" ]
-},
-{
-  "before": [ "<leader>", "f", "p" ],
-  "commands": [ "workbench.action.findInFiles" ]
-},
-{
-  "before": [ "g", "b" ],
-  "commands": [ "workbench.action.navigateBackInEditLocations" ]
-},
-{
-  "before": [ "g", "f" ],
-  "commands": [ "workbench.action.navigateForwardInEditLocations" ]
-},
-{
-  "before": [ "g", "e" ],
-  "commands": [ "editor.action.marker.nextInFiles" ]
-},
-{
-  "before": [ "<leader>", "n", "l" ],
-  "commands": [ ":nohlsearch" ]
-},
-{
-  "before": [ "<leader>", "p", "a" ],
-  "commands": [ "workbench.action.showCommands" ]
-},
-{
-  "before": [ "<leader>", "p", "d" ],
-  "commands": [ "editor.action.showHover" ]
-},
-{
-  "before": [ "<leader>", "p", "p" ],
-  "commands": [ "editor.action.triggerParameterHints" ]
-},
-{
-  "before": [ "<leader>", "r", "f" ],
-  "commands": [ "workbench.action.quickOpen" ]
-},
-{
-  "before": [ "<leader>", "r", "p" ],
-  "commands": [ "workbench.action.openRecent" ]
-},
-{
-  "before": [ "<leader>", "r", "r" ],
-  "commands": [ "python.execInTerminal" ]
-},
-{
-  "before": [ "<leader>", "r", "d" ],
-  "commands": [ "workbench.action.debug.start" ]
-},
-{
-  "before": [ "<leader>", "r", "s" ],
-  "commands": [ "workbench.action.debug.stop" ]
-},
-{
-  "before": [ "<leader>", "d", "m" ],
-  "commands": [ "editor.debug.action.toggleBreakpoint" ]
-},
-{
-  "before": [ "<leader>", "d", "e" ],
-  "commands": [ "editor.debug.action.conditionalBreakpoint" ]
-},
-{
-  "before": [ "<leader>", "t"],
-  "commands": [ "workbench.action.terminal.toggleTerminal" ]
-},
-{
-  "before": [ "<leader>", "w", "a" ],
-  "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.killAll" ]
-},
-{
-  "before": [ "<leader>", "w", "m" ],
-  "commands": ["markdown.showPreviewToSide"]
-},
-{
-  "before": [ "<leader>", "r", "n" ],
-  "commands": ["editor.action.rename"]
-},
-{
-  "before": [ "<leader>", "w", "z" ],
-  "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.killAll", "workbench.action.toggleZenMode", ":set nu"]
-},
-{
-  "before": [ "<leader>", "w", "o" ],
-  "commands": ["workbench.action.closeOtherEditors"]
-},
-{
-  "before": [ "<leader>", "w", "c" ],
-  "commands": ["workbench.action.closeActiveEditor"]
-},
-{
-  "before": [ "<leader>", "s", "w" ],
-  "commands": ["editor.action.toggleWordWrap"]
-},
-{
-  "before": [ "<leader>", "z", "c" ],
-  "after": ["z", "M"]
-},
-{
-  "before": [ "<leader>", "z", "o" ],
-  "after": ["z", "R"]
-},
-{
-  "before": ["[", "["],
-  "after": ["?", "d", "e", "f", "<cr>"]
-},
-{
-  "before": ["]", "]"],
-  "commands": [":/def"]
-},
-],
-"vim.handleKeys": {
-"<C-a>": false,
-"<C-f>": false,
-"<C-c>": false,
-"<C-v>": false,
-"<C-z>": false
-},
+    {
+      "before": ["<tab>"],
+      "after": [">", "g", "v"]
+   },
+    {
+      "before": ["<s-tab>"],
+      "after": ["<", "g", "v"]
+   },
+    {
+      "before": [ "<leader>", "p", "a" ],
+      "commands": [ "workbench.action.showCommands" ]
+    },
+    {
+      "before": [ "<leader>", "r", "n" ],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": [ "<leader>", "w", "r" ],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": [ "<leader>", "e", "v" ],
+      "commands": ["editor.action.refactor"]
+    },
+    {
+      "before": [ "<leader>", "e", "m" ],
+      "commands": ["editor.action.refactor"]
+    },
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+   },
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+   },
+    {
+      "before": [ "<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": [ "<leader>", "f", "l"],
+      "commands": ["workbench.files.action.showActiveFileInExplorer"]
+    },
+    {
+      "before": [ "<leader>", "f", "c" ],
+      "commands": [ "editor.action.formatDocument" ]
+    },
+    {
+      "before": [ "<leader>", "f", "s" ],
+      "commands": [ "workbench.action.gotoSymbol" ]
+    },
+    {
+      "before": [ "<leader>", "f", "p" ],
+      "commands": [ "workbench.action.findInFiles" ]
+    },
+    {
+      "before": [ "g", "b" ],
+      "commands": [ "workbench.action.navigateBackInEditLocations" ]
+    },
+    {
+      "before": [ "g", "f" ],
+      "commands": [ "workbench.action.navigateForwardInEditLocations" ]
+    },
+    {
+      "before": [ "g", "e" ],
+      "commands": [ "editor.action.marker.nextInFiles" ]
+    },
+    {
+      "before": [ "<leader>", "n", "l" ],
+      "commands": [ ":nohlsearch" ]
+    },
+    {
+      "before": [ "<leader>", "p", "a" ],
+      "commands": [ "workbench.action.showCommands" ]
+    },
+    {
+      "before": [ "<leader>", "p", "d" ],
+      "commands": [ "editor.action.showHover" ]
+    },
+    {
+      "before": [ "<leader>", "p", "p" ],
+      "commands": [ "editor.action.triggerParameterHints" ]
+    },
+    {
+      "before": [ "<leader>", "r", "f" ],
+      "commands": [ "workbench.action.quickOpen" ]
+    },
+    {
+      "before": [ "<leader>", "r", "p" ],
+      "commands": [ "workbench.action.openRecent" ]
+    },
+    {
+      "before": [ "<leader>", "r", "r" ],
+      "commands": [ "python.execInTerminal" ]
+    },
+    {
+      "before": [ "<leader>", "r", "d" ],
+      "commands": [ "workbench.action.debug.start" ]
+    },
+    {
+      "before": [ "<leader>", "r", "s" ],
+      "commands": [ "workbench.action.debug.stop" ]
+    },
+    {
+      "before": [ "<leader>", "d", "m" ],
+      "commands": [ "editor.debug.action.toggleBreakpoint" ]
+    },
+    {
+      "before": [ "<leader>", "d", "e" ],
+      "commands": [ "editor.debug.action.conditionalBreakpoint" ]
+    },
+    {
+      "before": [ "<leader>", "t"],
+      "commands": [ "workbench.action.terminal.toggleTerminal" ]
+    },
+    {
+      "before": [ "<leader>", "w", "a" ],
+      "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.killAll" ]
+    },
+    {
+      "before": [ "<leader>", "w", "m" ],
+      "commands": ["markdown.showPreviewToSide"]
+    },
+    {
+      "before": [ "<leader>", "r", "n" ],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": [ "<leader>", "w", "z" ],
+      "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.killAll", "workbench.action.toggleZenMode", ":set nu"]
+    },
+    {
+      "before": [ "<leader>", "w", "o" ],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    {
+      "before": [ "<leader>", "w", "c" ],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": [ "<leader>", "s", "w" ],
+      "commands": ["editor.action.toggleWordWrap"]
+    },
+    {
+      "before": [ "<leader>", "z", "c" ],
+      "after": ["z", "M"]
+    },
+    {
+      "before": [ "<leader>", "z", "o" ],
+      "after": ["z", "R"]
+    },
+    {
+      "before": ["[", "["],
+      "after": ["?", "d", "e", "f", "<cr>"]
+    },
+    {
+      "before": ["]", "]"],
+      "commands": [":/def"]
+    },
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-z>": false
+  },

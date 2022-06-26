@@ -6,7 +6,7 @@ set relativenumber
 set ignorecase
 
 set clipboard+=unnamed
-set scrolloff=13
+set scrolloff=17
 set history=200
 set notimeout
 set incsearch
@@ -24,7 +24,6 @@ vmap <s-tab> <gv
 vmap p "_dp
 
 
-nmap <leader>/ <action>(CommentByLineComment)
 
 let g:WhichKeyDesc_Debug = "<leader>c Chatops"
 nmap <leader>cc <action>(Tool_External Tools_chat)
@@ -102,3 +101,5 @@ vmap <leader>rn <action>(RenameElement)
 vmap <leader>ev <action>(IntroduceVariable)
 vmap <leader>em <action>(ExtractMethod)
 vmap <leader>/ <action>(CommentByLineComment)
+vmap [[ <action>(MethodUp)
+vmap ]] <action>(MethodDown)
