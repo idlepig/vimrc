@@ -24,7 +24,8 @@ set shiftwidth=4
 
 
 nmap <CR> o<ESC>
-vmap p "_dp
+vmap p pgvy
+vmap P Pgvy
 
 " '. last change location
 

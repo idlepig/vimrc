@@ -21,7 +21,13 @@ Plug 'preservim/nerdtree'
 nmap <Enter> o<ESC>
 vmap <tab> >gv
 vmap <s-tab> <gv
-vmap p "_dp
+vmap p pgvy
+vmap P Pgvy
+
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
 
 
 
