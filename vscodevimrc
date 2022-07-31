@@ -113,7 +113,7 @@
     },
     {
       "before": [ "<leader>", "r", "f" ],
-      "commands": [ "workbench.action.quickOpen" ]
+      "commands": [ "workbench.action.quickOpenPreviousEditor" ]
     },
     {
       "before": [ "<leader>", "r", "p" ],
