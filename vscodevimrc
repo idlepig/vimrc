@@ -157,7 +157,7 @@
     },
     {
       "before": [ "<leader>", "w", "z" ],
-      "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.killAll", "workbench.action.toggleZenMode", ":set nu"]
+      "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.killAll", "workbench.action.toggleZenMode", ":set nu", ":set relativenumber"]
     },
     {
       "before": [ "<leader>", "w", "o" ],
