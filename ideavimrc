@@ -58,6 +58,10 @@ nmap ge <action>(GotoNextError)
 let g:WhichKeyDesc_NoHighlight = "<leader>n NoHighlight"
 nmap <leader>nl :nohlsearch<CR>
 
+let g:WhichKeyDesc_Open = "<leader>o Open"
+nmap <leader>ob <action>(OpenInBrowser)
+
+
 let g:WhichKeyDesc_Popup = "<leader>p Popup"
 nmap <leader>pa <action>(GotoAction)
 nmap <leader>pf <action>(GotoFile)
