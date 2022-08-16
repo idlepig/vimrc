@@ -181,11 +181,11 @@
     },
     {
       "before": ["[", "["],
-      "after": ["?", "d", "e", "f", "<cr>"]
+      "after": ["?", "d", "e", "f", "<cr>", ":", "n", "o", "h", "l", "<cr>"]
     },
     {
       "before": ["]", "]"],
-      "commands": [":/def"]
+      "after": ["/", "d", "e", "f", "<cr>", ":", "n", "o", "h", "l", "<cr>"]
     },
   ],
   "vim.handleKeys": {
