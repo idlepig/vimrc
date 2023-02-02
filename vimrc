@@ -58,7 +58,7 @@ nmap <leader>fl <esc>
 " reformat code
 nmap <leader>fc <esc>
 " file structure
-nmap <leader>fs <esc>
+nnoremap <leader>fs :vimgrep /^#\+\s/ %<Bar>cwindow<CR>
 " find in path, multiple files
 nmap <leader>fp <esc>
 
@@ -136,8 +136,11 @@ vmap <leader>em <esc>
 vmap <leader>/ <esc>
 
 
-nnoremap <leader>fs :vimgrep /^#\+\s/ %<Bar>cwindow<CR>
 nnoremap <leader>gd :normal yi[<CR>:e <C-r>"<CR>
 nnoremap <leader>td I- [done] <ESC>
 nnoremap <leader>toc :g/^#\s/t0<CR>
+
+autocmd TextChanged,TextChangedI *.rst,*.txt,*.py,*.md silent write
+
+
 
