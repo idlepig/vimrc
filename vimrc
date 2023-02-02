@@ -142,5 +142,4 @@ nnoremap <leader>toc :g/^#\s/t0<CR>
 
 autocmd TextChanged,TextChangedI *.rst,*.txt,*.py,*.md silent write
 
-
-
+autocmd FileType sql nnoremap <leader>fc :%!sqlformat --reindent --keywords upper --identifiers lower -<CR>
