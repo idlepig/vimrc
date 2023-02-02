@@ -134,3 +134,10 @@ vmap <leader>ev <esc>
 vmap <leader>em <esc>
 " visual comment 
 vmap <leader>/ <esc>
+
+
+nnoremap <leader>fs :vimgrep /^#\+\s/ %<Bar>cwindow<CR>
+nnoremap <leader>gd :normal yi[<CR>:e <C-r>"<CR>
+nnoremap <leader>td I- [done] <ESC>
+nnoremap <leader>toc :g/^#\s/t0<CR>
+
