@@ -137,7 +137,9 @@ vmap <leader>/ <esc>
 
 
 nnoremap <leader>gd :normal yi[<CR>:e <C-r>"<CR>
-nnoremap <leader>td I- [done] <ESC>
+nnoremap <leader>ti I- [ ] <ESC>
+nnoremap <leader>td md^f[lrx`d
+
 nnoremap <leader>toc :g/^#\s/t0<CR>
 
 autocmd TextChanged,TextChangedI *.rst,*.txt,*.py,*.md silent write
