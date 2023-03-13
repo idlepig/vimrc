@@ -162,6 +162,7 @@ au BufEnter *.md setlocal foldexpr=MarkdownLevel()
 au BufEnter *.md setlocal foldmethod=expr 
 
 
-syn clear markdownError
+au BufEnter *.md syntax clear markdownError
+
 
 
