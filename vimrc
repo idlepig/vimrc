@@ -138,10 +138,30 @@ vmap <leader>/ <esc>
 
 nnoremap <leader>gd :normal yi[<CR>:e <C-r>"<CR>
 nnoremap <leader>ti I- [ ] <ESC>
-nnoremap <leader>td md^f[lrx`d
+" nnoremap <leader>td md^f[lrx`d
+nnoremap <leader>td ^xi- [x]<ESC>
+
 
 nnoremap <leader>toc :g/^#\s/t0<CR>
 
 autocmd TextChanged,TextChangedI *.rst,*.txt,*.py,*.md silent write
 
 autocmd FileType sql nnoremap <leader>fc :%!sqlformat --reindent --keywords upper --identifiers lower -<CR>
+
+
+
+function MarkdownLevel()
+    let h = matchstr(getline(v:lnum), '^#\+')
+    if empty(h)
+        return "="
+    else
+        return ">" . len(h)
+    endif
+endfunction
+au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
+au BufEnter *.md setlocal foldmethod=expr 
+
+
+syn clear markdownError
+
+
