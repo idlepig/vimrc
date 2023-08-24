@@ -137,9 +137,9 @@ vmap <leader>/ <esc>
 
 
 nnoremap <leader>gd :normal yi[<CR>:e <C-r>"<CR>
-nnoremap <leader>ti I- [ ] <ESC>
-" nnoremap <leader>td md^f[lrx`d
-nnoremap <leader>td ^xi- [x]<ESC>
+nnoremap <leader>ti I- [ ] <ESC>A start: <ESC>:put=strftime('%Y-%m-%d %H:%M')<CR>kJ
+nnoremap <leader>td ^f[lrxA end: <ESC>:put=strftime('%Y-%m-%d %H:%M')<CR>kJ
+
 
 
 nnoremap <leader>toc :g/^#\s/t0<CR>
