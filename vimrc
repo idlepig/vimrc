@@ -158,8 +158,8 @@ function MarkdownLevel()
         return ">" . len(h)
     endif
 endfunction
-au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
-au BufEnter *.md setlocal foldmethod=expr 
+" au BufEnter *.md setlocal foldexpr=MarkdownLevel()  
+" au BufEnter *.md setlocal foldmethod=expr 
 
 
 au BufEnter *.md syntax clear markdownError
