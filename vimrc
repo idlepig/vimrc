@@ -1,8 +1,8 @@
 set nocompatible
 set encoding=utf8
 
-set foldmethod=manual
-set foldmethod=indent
+" set foldmethod=manual
+" set foldmethod=indent
 
 let mapleader=" "
 
