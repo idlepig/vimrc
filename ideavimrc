@@ -67,7 +67,7 @@ nmap <leader>pa <action>(GotoAction)
 nmap <leader>pf <action>(GotoFile)
 nmap <leader>pd <action>(QuickJavaDoc)
 nmap <leader>pp <action>(ParameterInfo)
-nmap <Leader>p( ^f(a,<ESC>f)i,<ESC>^:s/,/&\r/g<CR>%ld$%
+nmap <Leader>p( ^f(a,<ESC>f)i,<ESC>^:s/,/&\r/g<CR>j^%ld$%
 
 
 " run, debug, stop run, reload, recent
