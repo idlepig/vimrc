@@ -86,6 +86,7 @@ nmap <leader>t <action>(ActivateTerminalToolWindow)
 
 let g:WhichKeyDesc_Window = "<leader>w Window"
 nmap <leader>wa <action>(UnsplitAll) \| <action>(HideAllWindows)
+nmap <leader>dl <action>(RestoreDefaultLayout)
 nmap <leader>wb <action>(ActivateBookmarksToolWindow)
 nmap <leader>wc <action>(CloseEditor)
 nmap <leader>wh <action>(HideActiveWindow)
