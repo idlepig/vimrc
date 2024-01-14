@@ -120,8 +120,12 @@
       "commands": [ "workbench.action.openRecent" ]
     },
     {
-      "before": [ "<leader>", "r", "r" ],
+      "before": [ "<leader>", "r", "g" ],
       "commands": [ "python.execInTerminal" ]
+    },
+    {
+      "before": [ "<leader>", "r", "r" ],
+      "commands": [ "code-runner.run" ]
     },
     {
       "before": [ "<leader>", "r", "d" ],
