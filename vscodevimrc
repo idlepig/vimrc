@@ -149,7 +149,7 @@
     },
     {
       "before": [ "<leader>", "w", "a" ],
-      "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.kill"]
+      "commands": [ "workbench.action.closeEditorsInOtherGroups", "workbench.action.maximizeEditor", "workbench.action.terminal.kill", "workbench.action.closePanel" ]
     },
     {
       "before": [ "<leader>", "w", "m" ],
