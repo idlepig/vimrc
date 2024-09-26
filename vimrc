@@ -13,6 +13,7 @@ syntax on
 set nobackup
 set noswapfile
 set nowritebackup
+set noro
 
 set ignorecase
 set nu
